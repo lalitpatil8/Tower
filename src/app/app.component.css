@@ -1,0 +1,18 @@
+#wrapper_Container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-image: url(../assets/network.jpg);
+    background-size: 100% 100%;
+}
+#title {
+    position: relative;
+    /* padding: 47% 0px; */
+    margin-left: 65px;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 5px 5px 5px #945c5c;
+}
