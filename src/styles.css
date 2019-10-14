@@ -59,6 +59,8 @@ h1,h2,h3,h4,h5,h6{
   }
   .form-group label {
     float: left;
+    width: 100%;
+    text-align: left;
     padding: 15px 0px;
 }
   
@@ -134,4 +136,10 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     margin: 15px 0px 0px 0px;
     padding: 15px 0px;
+}
+small.form-text.text-muted{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: red;
 }
