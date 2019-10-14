@@ -1,9 +1,49 @@
 <div id="wrapper_Container">
   <div class="section w50">
-    <div id="title" class="cntr">{{title}}</div>
+    <div id="title" class="txtCntr top50">{{title}}</div>
   </div>
   <div class="section w50">
-      <div id="title" class="cntr">fgjfgfjdgsfgfgsdfgdjhgf fdsfgsjgfdjhf</div>
-    <!-- <div class="cntr"></div> -->
+      <div id="loginWrapper" class="txtCntr">
+        <!-- <h1>Login Here</h1> -->
+        <!-- <div class="login">
+          <div class="login-triangle"></div>
+          
+          <h2 class="login-header">Log in</h2>
+        
+          <form class="login-container">
+            <p><input type="email" placeholder="Email"></p>
+            <p><input type="password" placeholder="Password"></p>
+            <p><input type="submit" value="Log in"></p>
+          </form>
+        </div> -->
+        <!-- <h1 class="text-center">Log in</h1> -->
+        <!-- Form start -->
+        <div class="login">
+            <h2 class="login-header">Log in</h2>
+          <form class="login-container" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+              <small class="form-text text-muted" 
+                *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required">
+                  Please enter email address.!
+              </small>
+        
+              <small class="form-text text-muted"
+              *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email">
+                Email address not well formed.!
+              </small>
+            </div>
+            
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" formControlName="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btnSubmit" [disabled]="!loginForm.valid">Submit</button>
+          </form>
+        </div>
+
+        <!-- Form End -->
+      </div>
   </div>
 </div>

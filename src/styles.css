@@ -1,9 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body, p, div{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color:#000;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
 .clrBoth{
     clear: both;
     padding: 0px;
     margin: 0px;
 }
-.cntr{
+.txtCntr{
     text-align: center;
 }
 .flt_lft{
@@ -12,17 +24,114 @@
 .flt_rft{
     float: right;
 }
+.w100{
+    width: 100%;
+}
 .w50{
-    width: 50%;
+    width: 49%;
 }
 .w25{
-    width: 25%;
+    width: 24.5%;
 }
-.section{
-    border: 1px solid red;
+.section {
+    /* border: 1px solid red; */
     position: relative;
-    margin: 0px;
+    margin: 0px 0px 0px 5px;
     padding: 0px;
     height: auto;
     display: inline-block;
+}
+
+/*  */
+
+.login {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+    padding: 40px 0px;
+}
+  
+  /* Reset top and bottom margins from certain elements */
+  .login-header,
+  .login p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-group label {
+    float: left;
+    padding: 15px 0px;
+}
+  
+  /* .login-triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid transparent;
+    border-bottom-color: #28d;
+  } */
+  
+  .login-header {
+    background: #28d;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .login-container {
+    background: #ebebeb;
+    padding: 12px;
+  }
+  
+  /* Every row inside .login-container is defined with p tags */
+  .login p {
+    padding: 12px;
+  }
+  
+  .login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+  
+  .login input[type="email"],
+  .login input[type="password"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+  }
+  
+  /* Text fields' focus effect */
+  .login input[type="email"]:focus,
+  .login input[type="password"]:focus {
+    border-color: #888;
+  }
+  
+  .login input[type="submit"], .btnSubmit {
+    background: #28d;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login input[type="submit"]:hover, .btnSubmit:hover {
+    background: #17c;
+  }
+  
+  /* Buttons' focus effect */
+  .login input[type="submit"]:focus, .btnSubmit:focus {
+    border-color: #05a;
+  }
+  button.btn.btn-primary.btnSubmit {
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    padding: 15px 0px;
 }

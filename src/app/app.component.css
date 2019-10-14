@@ -10,9 +10,20 @@
 }
 #title {
     position: relative;
-    /* padding: 47% 0px; */
-    margin-left: 65px;
     color: #fff;
     font-size: 48px;
     text-shadow: 5px 5px 5px #945c5c;
+}
+.top50{
+    margin-top:50%;
+}
+#loginWrapper{
+    position: relative;
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    background: #f7f6f559;
+    box-shadow: 0px 15px 25px #313030e6;
+    border-radius: 0px 0px 30px 30px;
+    /* border: 1px solid red; */
 }
